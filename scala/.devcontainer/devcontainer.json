@@ -1,0 +1,20 @@
+{
+    "name": "Ubuntu",
+    //"image": "mcr.microsoft.com/devcontainers/base:jammy"
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"scala-lang.scala",
+				"scalameta.metals",
+				"Anan.jetbrains-darcula-theme",
+				"hbenl.vscode-test-explorer"
+			],
+			"settings": {
+			 "workbench.colorTheme": "JetBrains Darcula Theme"
+			}
+		}
+	}
+}

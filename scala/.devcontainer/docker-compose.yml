@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+      - ..:/workspace:cached
+  
+  #rabbit-mq:
+  #  image: rabbitmq:3.8.27-alpine
+  #  environment:
+  #    - RABBITMQ_DEFAULT_USER="rabbit-user"
+  #    - RABBITMQ_DEFAULT_PASS="local-rabbit-pass"
+  #  network_mode: service:app
+  #postgres:
+  #  image: postgres:9.6-alpine
+  #  environment:
+  #    - POSTGRES_PASSWORD="localpass"
+  #  network_mode: service:app
