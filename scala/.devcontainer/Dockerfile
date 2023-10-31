@@ -8,7 +8,7 @@ RUN "$HOME/.sdkman/bin/sdkman-init.sh"
 
 
 # Java Env
-RUN zsh -c "source $HOME/.sdkman/bin/sdkman-init.sh && sdk install java 11.0.17-zulu"
+RUN zsh -c "source $HOME/.sdkman/bin/sdkman-init.sh && sdk install java 17.0.2-tem"
 
 #Scala Env
 RUN zsh -c "source $HOME/.sdkman/bin/sdkman-init.sh && sdk install sbt && sdk install scala && sdk install scalacli"
